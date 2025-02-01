@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ja tomou no cu Hoje?</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: black;
+            padding: 50px;
+        }
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            display: inline-block;
+        }
+        button {
+            padding: 10px 20px;
+            margin: 10px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .sim { background-color: green; color: white; }
+        .nao { background-color: red; color: white; }
+
+        .curioso {
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            background: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Já tomou no cu hoje👌??</h1>
+        <button class="sim" onclick="responder('sim')">Sim</button>
+        <button class="nao" onclick="responder('nao')">Não</button>
+        <p id="mensagem"></p>
+    </div>
+    <div>
+        <p class="curioso">Tu é curioso pkrl em</p>
+    </div>
+
+    <script>
+        function responder(resposta) {
+            const mensagem = document.getElementById("mensagem");
+            if (resposta === "sim") {
+                mensagem.innerText = "Otimo!, vai se fuder agora.";
+            } else {
+                mensagem.innerText = "Vai tomar no cu!";
+            }
+        }
+    </script>
+</body>
+</html>
